@@ -1,0 +1,52 @@
+:host {
+  position:fixed;
+  bottom: 0;
+  height: 5rem;
+  width: 100vw;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-wrapper {display: none;}
+
+.nav-icon {
+  height: 2rem;
+}
+
+.notif-icon-notif {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  margin-left: -1.5rem;
+}
+
+@media screen and (min-width: 820px) {
+  :host {
+    width: 5rem;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    gap: 3rem;
+  }
+  :host > .nav-icon:first-child {
+    margin-top: 3rem;
+  }
+  .notif-icon-notif {
+    margin-top: 16.5rem;
+  }
+  .logo-wrapper {
+    background-color: var(--bg-quaternary);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-wrapper .nav-icon {
+    height: 4rem;
+  }
+
+}

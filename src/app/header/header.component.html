@@ -1,0 +1,9 @@
+<header class="app-header flex">
+  <img src="@/../assets/icons/search.png" alt="search" class="search-icon header-icon" />
+  <input type="text" class='search-input' placeholder="Search" [formControl]="searchControl" (change)="onChange()"/>
+  <div class="flex">
+    <img src="@/../assets/icons/messages.png" alt="messages" class="messages-icon header-icon" />
+    <span class="message-notif">🔴</span>
+    <span class="message-num display-none">10</span>
+  </div>
+</header>

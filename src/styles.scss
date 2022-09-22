@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --bg-primary: #EFEFEF;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #303490;
+  --bg-quaternary: #4E61C7;
+  --bg-quinary: #E5E5E5;
+  --bg-senary: #1D64CE;
+  --txt-clr-primary: #000000;
+  --txt-clr-secondary:  #00000080;
+  --txt-clr-tertiary: #000000cc;
+  --txt-clr-quaternary: #FFFFFF;
+  --font-primary: 'Roboto', sans-serif;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-primary);
+  font-family: var(--font-primary);
+}
+
+.flex {display: flex;}
+.grid {display: grid;}
+
+.display-none {display: none;}

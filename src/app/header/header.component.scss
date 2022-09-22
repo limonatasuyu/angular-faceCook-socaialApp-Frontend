@@ -1,0 +1,50 @@
+.app-header {
+  background-color: var(--bg-secondary);
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background-color: var(--bg-primary);
+  height: 70%;
+  width: 43%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 20px;
+  font-size: 1.6rem;
+}
+.search-icon {
+  height: 2.3rem;
+}
+.messages-icon {
+  margin-left: 1rem;
+  height: 1.4rem;
+}
+.message-notif {
+  position: relative;
+  right: .7rem;
+  top: 1rem
+}
+//.header-icon {}
+
+@media screen and (min-width: 820px) {
+  .app-header {
+    justify-content: flex-start;
+  }
+  .search-icon {
+    margin-left: 7rem;
+  }
+  .search-input {
+    width: calc(100vw - 5rem - 7rem - 12rem);
+  }
+  .message-num {
+    display: initial;
+    font-size: 1.3rem;
+    margin-top: .1rem;
+    font-weight: 500;
+  }
+}
