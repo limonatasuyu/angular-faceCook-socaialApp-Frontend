@@ -2,10 +2,12 @@
   width: 18rem;
   height: 36rem ;
   background-color: var(--bg-secondary);
-  margin-left: calc(8rem + 7vw);
   margin-top: 6rem;
   box-shadow: 5px 5px 5px 0px grey;
   justify-items: center;
+  justify-self: center;
+  display: grid;
+  margin-left: 0;
 }
 
 .profile-pic-container {
@@ -14,7 +16,7 @@
   box-shadow: 5px 5px 5px 0px grey;
   height: 10rem; width: 10rem;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .profile-pic {width: 10rem;}
@@ -47,10 +49,16 @@
 .user-settings-icon {width: 2rem;}
 .user-settings-text {color: var(--txt-clr-secondary)}
 
+@media screen and (min-width: 820px) {
+  :host {
+    margin-left: 8rem;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   :host {
-  display: grid;
+  margin-left: calc(8rem + 7vw);
+  justify-self: initial;
   }
 }
 

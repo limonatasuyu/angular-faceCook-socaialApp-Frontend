@@ -1,0 +1,10 @@
+
+.page-container {
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  width: 100vw;
+}
+.page-content {display: grid;}
+@media screen and (min-width:  820px) {.page-container {display: flex;}}
+@media screen and (min-width: 1200px) {.page-content {display: flex;}}

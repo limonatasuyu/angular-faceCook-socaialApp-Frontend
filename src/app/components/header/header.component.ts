@@ -10,7 +10,9 @@ export class HeaderComponent implements OnInit {
 
   searchControl = new FormControl('');
 
-  onChange() {}
+  onChange() {
+    console.log('test')
+  }
 
   constructor() { }
 

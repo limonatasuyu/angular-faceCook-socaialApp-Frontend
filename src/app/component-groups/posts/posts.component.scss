@@ -1,5 +1,18 @@
+
+:host {
+  justify-content: center;
+  grid-gap: 3rem;
+  padding-bottom: 7rem;
+  display: grid;
+  margin-top: 2rem;
+}
+
+app-post {
+}
+
 .posts-container {
   justify-content: center;
+  grid-gap: 2rem;
 }
 
 .make-post-container {
@@ -25,16 +38,9 @@
   font-weight: bold;
   margin-block-start: .5rem;
 }
-.posts-container-posts {
-  justify-content: center;
-  grid-gap: 3rem;
-  padding-bottom: 7rem;
-}
+
 
 @media screen and (min-width: 820px) {
-  .page-content {
-    display: flex;
-  }
   .posts-container {
     width: calc(100vw - 15rem);
     margin-left: 5rem;
